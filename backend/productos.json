@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Pestañas Rizo DD",
+    "current_price": 16.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/1e675b35-38f6-4310-a60d-d55040ac4cd2.webp"
+    ]
+  },
+  {
+    "name": "Set collares Star Y2K",
+    "current_price": 25.00,
+    "previous_price": 30.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1088313822-1090633015.jpg"
+    ]
+  },
+  {
+    "name": "Collar Lune",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1088378401112357270.jpg",
+      "/Imagenes/-1089622858-1886501725.jpg"
+    ]
+  },
+  {
+    "name": "Par anillo Batman",
+    "current_price": 6.00,
+    "previous_price": 12.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1089757259-318930128.jpg"
+    ]
+  },
+  {
+    "name": "Polainas Darkness",
+    "current_price": 30.00,
+    "previous_price": 40.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1089759790-2028454240.jpg"
+    ]
+  },
+  {
+    "name": "Cadena de tres caídas para pierna",
+    "current_price": 6.00,
+    "previous_price": 15.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1088280220345957246.jpg"
+    ]
+  },
+  {
+    "name": "Juego de anillos Darcy",
+    "current_price": 9.00,
+    "previous_price": 15.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-1088296619471141432.jpg",
+      "/Imagenes/-10896857461524853019.jpg"
+    ]
+  },
+  {
+    "name": "Set Beauty",
+    "current_price": 8.00,
+    "previous_price": 10.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-10897305191939466694.jpg"
+    ]
+  },
+  {
+    "name": "Guantes Star",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-10897468472084853651.jpg"
+    ]
+  },
+  {
+    "name": "Collar Rosedark",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-10897891422145843322.jpg"
+    ]
+  },
+  {
+    "name": "Par pulsera Spiderman - Hello Kitty",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/-11061736371104417064.jpg",
+      "/Imagenes/-1106398817260736934.jpg"
+    ]
+  },
+  {
+    "name": "Guantes Skull",
+    "current_price": 20.00,
+    "previous_price": 25.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/e40bbb3b802a1ff078a68387245938d1.jpg"
+    ]
+  },
+  {
+    "name": "Body Americano",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "Talla S - M",
+    "images": [
+      "/Imagenes/faded79c3e1741346b0fedb8b0c15702.jpg"
+    ]
+  },
+  {
+    "name": "Muñequera Metalero Rockero",
+    "current_price": 15.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG_20250506_185300.jpg"
+    ]
+  },
+  {
+    "name": "Pulsera Tachas",
+    "current_price": 10.00,
+    "previous_price": 13.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG_20250506_185324.jpg"
+    ]
+  },
+  {
+    "name": "Anillo Diamond Heart",
+    "current_price": 10.00,
+    "previous_price": 15.00,
+    "currency": "PEN",
+    "description": "Incluye cajita regulable",
+    "images": [
+      "/Imagenes/IMG_20250506_185657.jpg"
+    ]
+  },
+  {
+    "name": "Collar Shingeki no kyojin",
+    "current_price": 17.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG_20250507_112212.jpg"
+    ]
+  },
+  {
+    "name": "Set Mía",
+    "current_price": 12.00,
+    "previous_price": 15.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG_20250621_130130.jpg"
+    ]
+  },
+  {
+    "name": "Guantes Hello Kitty Diamantes",
+    "current_price": 20.00,
+    "previous_price": 25.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG-20250612-WA0126.jpg"
+    ]
+  },
+  {
+    "name": "Par de Llaveros Gwen - Miles Morales",
+    "current_price": 30.00,
+    "previous_price": 35.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/IMG-20250805-WA0076.jpg"
+    ]
+  },
+  {
+    "name": "Top corte corazón",
+    "current_price": 10.00,
+    "previous_price": 20.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/PicsArt_01-11-05.45.35.jpg",
+      "/Imagenes/PicsArt_02-24-08.02.41.jpg"
+    ]
+  },
+  {
+    "name": "Aretes Y2K",
+    "current_price": 8.00,
+    "previous_price": 15.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/PicsArt_03-11-03.44.11.jpg"
+    ]
+  },
+  {
+    "name": "Calentadores Importados",
+    "current_price": 20.00,
+    "previous_price": 25.00,
+    "currency": "PEN",
+    "description": "",
+    "images": [
+      "/Imagenes/PicsArt_09-25-10.43.15.jpg"
+    ]
+  }
+]
