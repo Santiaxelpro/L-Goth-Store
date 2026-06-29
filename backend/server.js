@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = process.env.CORS_ORIGINS
   ? process.env.CORS_ORIGINS.split(',')
-  : ['http://localhost:5173', 'http://localhost:3000'];
+  : ['http://localhost:5173', 'http://localhost:3000', 'lgoth.qzz.io', 'lgoth-store.pages.dev'];
 
 const PRODUCTS_FILE = 'productos.json';
 const ORDERS_FILE = 'ordenes.json';
