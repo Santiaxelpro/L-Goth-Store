@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-void text-lumen font-body antialiased;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-goth-400;
+    outline-style: solid;
+  }
+
+  ::selection {
+    @apply bg-goth-500/40 text-lumen;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply absolute -top-full left-4 z-[100] px-4 py-2 bg-goth-500 text-white rounded-b-lg transition-all duration-200;
+  }
+
+  .skip-link:focus {
+    @apply top-0;
+  }
+
+  .btn-goth {
+    @apply inline-flex items-center gap-2 px-6 py-2.5 bg-goth-600 text-lumen border border-goth-500/50 
+           rounded font-gothic text-sm font-semibold tracking-wider uppercase
+           transition-all duration-300 cursor-pointer
+           hover:bg-goth-500 hover:border-goth-400 hover:shadow-[0_0_15px_rgba(75,0,130,0.4)]
+           focus-visible:outline-2 focus-visible:outline-goth-400
+           disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-goth-600 disabled:hover:shadow-none;
+  }
+
+  .btn-goth-outline {
+    @apply btn-goth bg-transparent border-goth-500/30 text-bone-200
+           hover:bg-goth-800/60 hover:border-goth-400 hover:text-lumen;
+  }
+
+  .btn-goth-danger {
+    @apply btn-goth bg-blood-900/60 border-blood-700/40 text-blood-400
+           hover:bg-blood-700 hover:border-blood-500 hover:text-white hover:shadow-[0_0_15px_rgba(220,38,38,0.3)];
+  }
+
+  .btn-goth-success {
+    @apply btn-goth bg-emerald-950/60 border-emerald-800/40 text-emerald-400
+           hover:bg-emerald-800 hover:border-emerald-600 hover:text-white hover:shadow-[0_0_15px_rgba(16,185,129,0.3)];
+  }
+
+  .input-goth {
+    @apply w-full px-4 py-2.5 bg-abyss border border-goth-600/40 rounded-lg 
+           text-lumen placeholder-bone-400/30 font-body text-sm
+           transition-all duration-200
+           focus:border-goth-400 focus:outline-none focus:ring-1 focus:ring-goth-500/50
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .card-goth {
+    @apply bg-card-gradient border border-goth-600/30 rounded-xl overflow-hidden
+           transition-all duration-300
+           hover:border-goth-500/50 hover:shadow-[0_4px_30px_rgba(75,0,130,0.12)];
+  }
+
+  .ornament-divider {
+    @apply flex items-center gap-4 my-12 select-none;
+  }
+
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-gradient-to-r from-transparent via-goth-500/30 to-transparent;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-gothic font-bold text-center text-bone-100 tracking-wider;
+  }
+
+  .section-subtitle {
+    @apply text-bone-300/70 text-center mt-3 font-body text-sm md:text-base tracking-wide;
+  }
+
+  .skeleton-pulse {
+    @apply bg-gradient-to-r from-goth-700 via-goth-600/60 to-goth-700 bg-[length:200%_100%] animate-shimmer rounded;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #2d1f3d transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-goth-600 rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-goth-500;
+  }
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+.particles-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  top: -20px;
+  animation: particleFall linear infinite;
+  opacity: 0;
+}
+
+.particle-dot {
+  border-radius: 50%;
+  background-color: rgba(107, 63, 160, 0.5);
+  animation-duration: calc(8s + var(--delay, 0s));
+  animation-delay: var(--delay, 0s);
+}
+
+.particle-cross {
+  color: rgba(107, 63, 160, 0.35);
+  font-size: 14px;
+  animation-duration: calc(12s + var(--delay, 0s));
+  animation-delay: var(--delay, 0s);
+}
+
+.particle-diamond {
+  color: rgba(139, 92, 246, 0.25);
+  font-size: 12px;
+  animation-duration: calc(15s + var(--delay, 0s));
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes particleFall {
+  0% {
+    transform: translateY(-20px) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(100vh) translateX(var(--drift, 20px)) rotate(360deg);
+    opacity: 0;
+  }
+}

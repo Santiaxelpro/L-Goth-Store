@@ -1,0 +1,30 @@
+const crypto = require('crypto');
+
+module.exports = {
+  JWT_SECRET: process.env.JWT_SECRET || crypto.randomBytes(64).toString('hex'),
+  JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET || crypto.randomBytes(64).toString('hex'),
+  JWT_ACCESS_EXPIRES: process.env.JWT_ACCESS_EXPIRES || '15m',
+  JWT_REFRESH_EXPIRES: process.env.JWT_REFRESH_EXPIRES || '7d',
+  ADMIN_USERNAME: process.env.ADMIN_USERNAME || 'fpintoca15',
+  ADMIN_PASSWORD_HASH: process.env.ADMIN_PASSWORD_HASH || null,
+  ADMIN_PASSWORD: process.env.ADMIN_PASSWORD || '20041015',
+  BCRYPT_ROUNDS: 12,
+  MAX_FAILED_ATTEMPTS: 5,
+  LOCKOUT_DURATION_MS: 15 * 60 * 1000,
+  PROGRESSIVE_DELAY_BASE_MS: 500,
+  PROGRESSIVE_DELAY_MULTIPLIER: 2,
+  PROGRESSIVE_DELAY_MAX_MS: 30000,
+  IP_RATE_LIMIT_WINDOW_MS: 60 * 1000,
+  IP_RATE_LIMIT_MAX: 5,
+  GLOBAL_AUTH_WINDOW_MS: 15 * 60 * 1000,
+  GLOBAL_AUTH_MAX: 100,
+  REFRESH_TOKEN_FAMILY_LENGTH: 16,
+  TOKEN_COOKIE_NAME: 'refresh_token',
+  TOKEN_COOKIE_OPTIONS: {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    path: '/auth/refresh',
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+  },
+};
